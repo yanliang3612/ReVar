@@ -23,7 +23,7 @@ The code for semi-supervised node classification.
 This is implemented mainly based on [Pytorch Geometric](https://github.com/rusty1s/pytorch_geometric). 
 
 
-## Random-Sampling Node Classification.
+## Semi-Supervised Node Classification (Random Split)
 
 ## Citation
 ```
