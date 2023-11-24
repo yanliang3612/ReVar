@@ -26,6 +26,11 @@ This is implemented mainly based on [Pytorch Geometric](https://github.com/rusty
 
 ## Semi-Supervised Node Classification (Random Split)
 
+## Configuration
+All the algorithms and models are implemented in Python and PyTorch Geometric. Experiments are
+conducted on a server with an NVIDIA 3090 GPU (24 GB memory) and an Intel(R) Xeon(R) Silver
+4210R CPU @ 2.40GHz.
+
 ## Citation
 ```
 @inproceedings{
