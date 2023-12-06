@@ -36,7 +36,7 @@ conducted on a server with an NVIDIA 3090 GPU (24 GB memory) and an Intel(R) Xeo
 @inproceedings{
 yan2023rethinking,
 title={Rethinking Semi-Supervised Imbalanced Node Classification from Bias-Variance Decomposition},
-author={Liang Yan and Gengchen Wei and Chen Yang and Shengzhong Zhang and Zengfeng Huang},
+author={Divin Yan and Gengchen Wei and Chen Yang and Shengzhong Zhang and Zengfeng Huang},
 booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
 year={2023},
 url={https://openreview.net/forum?id=0gvtoxhvMY}
