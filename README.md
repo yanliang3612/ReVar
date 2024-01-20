@@ -16,14 +16,14 @@ This paper introduces a new approach to address the issue of class imbalance in 
 
 We strictly adhere to the hyperparameter settings as specified in these papers. For detailed information, please refer to the respective publications.
 
-
-## Semi-Supervised Node Classification (Public Split)
+## The hyperparameter settings for each experiment will be released here:
+### Semi-Supervised Node Classification (Public Split)
 
 The code for semi-supervised node classification. 
 This is implemented mainly based on [Pytorch Geometric](https://github.com/rusty1s/pytorch_geometric). 
 
 
-## Semi-Supervised Node Classification (Random Split)
+### Semi-Supervised Node Classification (Random Split)
 
 ## Configuration
 All the algorithms and models are implemented in Python and PyTorch Geometric. Experiments are
