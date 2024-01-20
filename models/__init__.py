@@ -1,0 +1,1 @@
+from .trainer import RVGNN_Trainer
