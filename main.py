@@ -11,8 +11,6 @@ USE_WANDB = False
 
 def main():
     args = parse_args()
-    # with open('/root/GraFN/test_arg.json', 'wt') as f:
-    #     json.dump(vars(args), f, indent=4)
     set_random_seeds(0)
     torch.set_num_threads(2)
     embedder = RVGNN_Trainer(args)
