@@ -32,62 +32,62 @@ We strictly adhere to the hyperparameter settings as specified in these papers. 
 ## The hyperparameter settings for each experiment will be released here:
 ###  CiteSeer_semi_GAT_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CiteSeer --de_1 0.45 --de_2 0.4 --decay 0.01 --df_1 0.5 --df_2 0.4 --dim 128 --epochs 2000 --imb_ratio 10.0 --lam 0.25 --lam2 3 --layers 2 --lr 0.001 --n_head 8 --net GAT --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.21 --thres 0.7
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CiteSeer --de_1 0.45 --de_2 0.4 --decay 0.01 --df_1 0.5 --df_2 0.4 --dim 128 --epochs 2000 --imb_ratio 10.0 --lam 0.25 --lam2 3 --layers 2 --lr 0.001 --n_head 8 --net GAT --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.21 --thres 0.7
 ```
 
 ### CiteSeer_semi_GCN_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CiteSeer --de_1 0.65 --de_2 0.35 --decay 0.01 --df_1 0.4 --df_2 0.2 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 0.25 --lam2 2.85 --layers 4 --lr 0.005 --n_head 8 --net GCN --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.13 --thres 0.6
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CiteSeer --de_1 0.65 --de_2 0.35 --decay 0.01 --df_1 0.4 --df_2 0.2 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 0.25 --lam2 2.85 --layers 4 --lr 0.005 --n_head 8 --net GCN --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.13 --thres 0.6
 ```
 
 ### CiteSeer_semi_SAGE_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CiteSeer --de_1 0.65 --de_2 0.15 --decay 0.01 --df_1 0.7 --df_2 0.15 --dim 256 --epochs 2000 --imb_ratio 10.0 --lam 0.25 --lam2 1.25 --layers 2 --lr 0.0005 --n_head 8 --net SAGE --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.08 --thres 0.6
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CiteSeer --de_1 0.65 --de_2 0.15 --decay 0.01 --df_1 0.7 --df_2 0.15 --dim 256 --epochs 2000 --imb_ratio 10.0 --lam 0.25 --lam2 1.25 --layers 2 --lr 0.0005 --n_head 8 --net SAGE --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.08 --thres 0.6
 ```
 
 ### Computers_semi_GAT_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-semi --de_1 0.45 --de_2 0.35 --decay 0.01 --df_1 0.7 --df_2 0.15 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 0.35 --lam2 1.5 --layers 3 --lr 0.0005 --n_head 8 --net GAT --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.21 --thres 0.99
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-semi --de_1 0.45 --de_2 0.35 --decay 0.01 --df_1 0.7 --df_2 0.15 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 0.35 --lam2 1.5 --layers 3 --lr 0.0005 --n_head 8 --net GAT --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.21 --thres 0.99
 ```
 
 ### Computers_semi_GCN_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-semi --de_1 0.7 --de_2 0.2 --decay 0.01 --df_1 0.4 --df_2 0.1 --dim 256 --epochs 2000 --imb_ratio 10.0 --lam 0.35 --lam2 3 --layers 3 --lr 0.0001 --n_head 8 --net GCN --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.26 --thres 0.66
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-semi --de_1 0.7 --de_2 0.2 --decay 0.01 --df_1 0.4 --df_2 0.1 --dim 256 --epochs 2000 --imb_ratio 10.0 --lam 0.35 --lam2 3 --layers 3 --lr 0.0001 --n_head 8 --net GCN --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.26 --thres 0.66
 ```
 
 ### Computers_semi_SAGE_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-semi --de_1 0.4 --de_2 0.1 --decay 0.01 --df_1 0.6 --df_2 0.15 --dim 64 --epochs 2000 --imb_ratio 10.0 --lam 0.5 --lam2 3 --layers 4 --lr 0.0005 --n_head 8 --net SAGE --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.08 --thres 0.66
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-semi --de_1 0.4 --de_2 0.1 --decay 0.01 --df_1 0.6 --df_2 0.15 --dim 64 --epochs 2000 --imb_ratio 10.0 --lam 0.5 --lam2 3 --layers 4 --lr 0.0005 --n_head 8 --net SAGE --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.08 --thres 0.66
 ```
 
 ### Cora_semi_GAT_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Cora --de_1 0.55 --de_2 0.1 --decay 0.01 --df_1 0.6 --df_2 0.3 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 3 --lam2 0.35 --layers 3 --lr 0.01 --n_head 8 --net GAT --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.08 --thres 0.99
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Cora --de_1 0.55 --de_2 0.1 --decay 0.01 --df_1 0.6 --df_2 0.3 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 3 --lam2 0.35 --layers 3 --lr 0.01 --n_head 8 --net GAT --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.08 --thres 0.99
 ```
 
 ### Cora_semi_GCN_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Cora --de_1 0.45 --de_2 0.3 --decay 0.01 --df_1 0.65 --df_2 0.45 --dim 128 --epochs 2000 --imb_ratio 10.0 --lam 0.5 --lam2 0.35 --layers 4 --lr 0.01 --n_head 8 --net GCN --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.16 --thres 0.9
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Cora --de_1 0.45 --de_2 0.3 --decay 0.01 --df_1 0.65 --df_2 0.45 --dim 128 --epochs 2000 --imb_ratio 10.0 --lam 0.5 --lam2 0.35 --layers 4 --lr 0.01 --n_head 8 --net GCN --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.16 --thres 0.9
 ```
 
 ### Cora_semi_SAGE_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Cora --de_1 0.6 --de_2 0.1 --decay 0.01 --df_1 0.7 --df_2 0.4 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 0.25 --lam2 0.5 --layers 3 --lr 0.0005 --n_head 8 --net SAGE --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.05 --thres 0.8
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Cora --de_1 0.6 --de_2 0.1 --decay 0.01 --df_1 0.7 --df_2 0.4 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 0.25 --lam2 0.5 --layers 3 --lr 0.0005 --n_head 8 --net SAGE --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.05 --thres 0.8
 ```
 
 ### PubMed_semi_GAT_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset PubMed --de_1 0.65 --de_2 0.4 --decay 0.01 --df_1 0.4 --df_2 0.45 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 2.15 --lam2 1.5 --layers 3 --lr 0.1 --n_head 8 --net GAT --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.23 --thres 0.9
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset PubMed --de_1 0.65 --de_2 0.4 --decay 0.01 --df_1 0.4 --df_2 0.45 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 2.15 --lam2 1.5 --layers 3 --lr 0.1 --n_head 8 --net GAT --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.23 --thres 0.9
 ```
 
 ### PubMed_semi_GCN_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset PubMed --de_1 0.65 --de_2 0.15 --decay 0.01 --df_1 0.4 --df_2 0.1 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 3 --lam2 3 --layers 2 --lr 0.1 --n_head 8 --net GCN --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.13 --thres 0.93
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset PubMed --de_1 0.65 --de_2 0.15 --decay 0.01 --df_1 0.4 --df_2 0.1 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 3 --lam2 3 --layers 2 --lr 0.1 --n_head 8 --net GCN --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.13 --thres 0.93
 ```
 
 ### PubMed_semi_SAGE_10
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset PubMed --de_1 0.5 --de_2 0.15 --decay 0.01 --df_1 0.4 --df_2 0.45 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 2.65 --lam2 3 --layers 2 --lr 0.1 --n_head 8 --net SAGE --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.16 --thres 0.96
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset PubMed --de_1 0.5 --de_2 0.15 --decay 0.01 --df_1 0.4 --df_2 0.45 --dim 512 --epochs 2000 --imb_ratio 10.0 --lam 2.65 --lam2 3 --layers 2 --lr 0.1 --n_head 8 --net SAGE --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.16 --thres 0.96
 ```
 
 
@@ -97,31 +97,31 @@ python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadi
 
 ### Computers_random_GAT
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-random --de_1 0.5 --de_2 0.45 --decay 0.01 --df_1 0.45 --df_2 0.1 --dim 128 --epochs 2000 --imb_ratio 1.0 --lam 0.35 --lam2 1.25 --layers 4 --lr 0.001 --n_head 8 --net GAT --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.23 --thres 0.6
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-random --de_1 0.5 --de_2 0.45 --decay 0.01 --df_1 0.45 --df_2 0.1 --dim 128 --epochs 2000 --imb_ratio 1.0 --lam 0.35 --lam2 1.25 --layers 4 --lr 0.001 --n_head 8 --net GAT --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.23 --thres 0.6
 ```
 ### Computers_random_GCN
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-random --de_1 0.65 --de_2 0.15 --decay 0.01 --df_1 0.7 --df_2 0.1 --dim 512 --epochs 2000 --imb_ratio 1.0 --lam 3 --lam2 2.85 --layers 2 --lr 0.0005 --n_head 8 --net GCN --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.23 --thres 0.83
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-random --de_1 0.65 --de_2 0.15 --decay 0.01 --df_1 0.7 --df_2 0.1 --dim 512 --epochs 2000 --imb_ratio 1.0 --lam 3 --lam2 2.85 --layers 2 --lr 0.0005 --n_head 8 --net GCN --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.23 --thres 0.83
 ```
 
 ### Computers_random_SAGE
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-random --de_1 0.4 --de_2 0.2 --decay 0.01 --df_1 0.4 --df_2 0.15 --dim 128 --epochs 2000 --imb_ratio 1.0 --lam 1 --lam2 1 --layers 4 --lr 0.0005 --n_head 8 --net SAGE --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.23 --thres 0.99
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset Computers-random --de_1 0.4 --de_2 0.2 --decay 0.01 --df_1 0.4 --df_2 0.15 --dim 128 --epochs 2000 --imb_ratio 1.0 --lam 1 --lam2 1 --layers 4 --lr 0.0005 --n_head 8 --net SAGE --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.23 --thres 0.99
 ```
 
 ### CS_random_GAT
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CS-random --de_1 0.55 --de_2 0.2 --decay 0.01 --df_1 0.7 --df_2 0.4 --dim 512 --epochs 2000 --imb_ratio 1.0 --lam 2 --lam2 0.5 --layers 2 --lr 0.0001 --n_head 8 --net GAT --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.05 --thres 0.63
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CS-random --de_1 0.55 --de_2 0.2 --decay 0.01 --df_1 0.7 --df_2 0.4 --dim 512 --epochs 2000 --imb_ratio 1.0 --lam 2 --lam2 0.5 --layers 2 --lr 0.0001 --n_head 8 --net GAT --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.05 --thres 0.63
 ```
 
 ### CS_random_GCN
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CS-random --de_1 0.45 --de_2 0.3 --decay 0.01 --df_1 0.7 --df_2 0.2 --dim 512 --epochs 2000 --imb_ratio 1.0 --lam 0.85 --lam2 0.5 --layers 2 --lr 0.001 --n_head 8 --net GCN --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.16 --thres 0.7
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CS-random --de_1 0.45 --de_2 0.3 --decay 0.01 --df_1 0.7 --df_2 0.2 --dim 512 --epochs 2000 --imb_ratio 1.0 --lam 0.85 --lam2 0.5 --layers 2 --lr 0.001 --n_head 8 --net GCN --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.16 --thres 0.7
 ```
 
 ### CS_random_SAGE
 ```bash
-python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CS-random --de_1 0.7 --de_2 0.4 --decay 0.01 --df_1 0.45 --df_2 0.2 --dim 512 --epochs 2000 --imb_ratio 1.0 --lam 1.5 --lam2 0.5 --layers 4 --lr 0.001 --n_head 8 --net SAGE --patience 200 --project grafn --repetitions 5 --supervised True --tau 0.13 --thres 0.6
+python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CS-random --de_1 0.7 --de_2 0.4 --decay 0.01 --df_1 0.45 --df_2 0.2 --dim 512 --epochs 2000 --imb_ratio 1.0 --lam 1.5 --lam2 0.5 --layers 4 --lr 0.001 --n_head 8 --net SAGE --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.13 --thres 0.6
 ```
 
 ## Configuration
