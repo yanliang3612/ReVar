@@ -29,7 +29,7 @@ pip install https://data.pyg.org/whl/torch-1.12.0%2Bcu113/torch_spline_conv-1.2.
 
 We strictly adhere to the hyperparameter settings as specified in these papers. For detailed information, please refer to the respective publications.
 
-## The hyperparameter settings for each experiment will be released here:
+## The hyperparameter settings for each experiment:
 ###  CiteSeer_semi_GAT_10
 ```bash
 python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CiteSeer --de_1 0.45 --de_2 0.4 --decay 0.01 --df_1 0.5 --df_2 0.4 --dim 128 --epochs 2000 --imb_ratio 10.0 --lam 0.25 --lam2 3 --layers 2 --lr 0.001 --n_head 8 --net GAT --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.21 --thres 0.7
