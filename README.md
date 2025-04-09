@@ -1,5 +1,11 @@
 # Rethinking Semi-Supervised Imbalanced Node Classification from Bias-Variance Decomposition (NeurIPS 2023).
 
+This repository is the official implementation of Rethinking Semi-Supervised Imbalanced Node Classification from Bias-Variance Decomposition (NeurIPS 2023). 
+
+[[Paper]](https://openreview.net/forum?id=0gvtoxhvMY&noteId=bBcG4XGOE8) [[Project Page]](https://divinyan.com/ReVar/)
+
+Authors: Liang Yan, Gengchen Wei, Chen Yang, Shengzhong Zhang, Zengfeng Huang.
+
 ## Introduction
 
 Official Pytorch implementation of NeurIPS 2023 paper "[Rethinking Semi-Supervised Imbalanced Node Classification from Bias-Variance Decomposition](https://arxiv.org/abs/2310.18765)"
