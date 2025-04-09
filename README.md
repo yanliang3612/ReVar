@@ -2,7 +2,7 @@
 
 This repository is the official implementation of "Rethinking Semi-Supervised Imbalanced Node Classification from Bias-Variance Decomposition" (NeurIPS 2023). 
 
-[Project Page](https://divinyan.com/ReVar/) [Arxiv](https://arxiv.org/abs/2310.18765) [OpenReview](https://openreview.net/forum?id=0gvtoxhvMY&noteId=bBcG4XGOE8) [Slides](https://nips.cc/media/neurips-2023/Slides/73050.pdf) [Poster](https://neurips.cc/media/PosterPDFs/NeurIPS%202023/73050.png?t=1702115401.9719656)
+[[Project Page](https://divinyan.com/ReVar/) [Arxiv](https://arxiv.org/abs/2310.18765) [OpenReview](https://openreview.net/forum?id=0gvtoxhvMY&noteId=bBcG4XGOE8) [Slides](https://nips.cc/media/neurips-2023/Slides/73050.pdf) [Poster]](https://neurips.cc/media/PosterPDFs/NeurIPS%202023/73050.png?t=1702115401.9719656)
 
 Authors: Liang Yan, Gengchen Wei, Chen Yang, Shengzhong Zhang, Zengfeng Huang.
 
