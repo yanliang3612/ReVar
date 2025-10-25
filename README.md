@@ -1,4 +1,4 @@
-# Rethinking Semi-Supervised Imbalanced Node Classification from Bias-Variance Decomposition (NeurIPS 2023).
+# Rethinking Semi-Supervised Imbalanced Node Classification from Bias-Variance Decomposition (NeurIPS 2023)
 
 This repository is the official implementation of "Rethinking Semi-Supervised Imbalanced Node Classification from Bias-Variance Decomposition" (NeurIPS 2023). 
 
@@ -6,13 +6,15 @@ This repository is the official implementation of "Rethinking Semi-Supervised Im
 
 Authors: Liang Yan, Gengchen Wei, Chen Yang, Shengzhong Zhang, Zengfeng Huang.
 
-## Introduction
+---
+
+## 1. Introduction
 
 ![variance_imbalance](figures/variance_imbalance.png)
 ![revar](figures/revar.png)
 This paper introduces a new approach to address the issue of class imbalance in graph neural networks (GNNs) for learning on graph-structured data. Our approach integrates imbalanced node classification and Bias-Variance Decomposition, establishing a theoretical framework that closely relates data imbalance to model variance. We also leverage graph augmentation technique to estimate the variance, and design a regularization term to alleviate the impact of imbalance. This work provides a novel theoretical perspective for addressing the problem of imbalanced node classification in GNNs.
 
-## Environment
+## 2. Environment
 ```bash
 conda create -n "revar" python=3.8.13
 source activate revar
@@ -25,7 +27,7 @@ pip install https://data.pyg.org/whl/torch-1.12.0%2Bcu113/torch_sparse-0.6.16%2B
 pip install https://data.pyg.org/whl/torch-1.12.0%2Bcu113/torch_spline_conv-1.2.1%2Bpt112cu113-cp38-cp38-linux_x86_64.whl
 ```
 
-## The Implementation of Baselines and the Configuration of Hyperparameters
+## 3. The Implementation of Baselines and the Configuration of Hyperparameters
 - For the implementation and hyperparameters setting of **Re-Weight, PC Softmax, BalancedSoftmax, TAM**, please refer to [TAM](https://github.com/Jaeyun-Song/TAM).
 - For the implementation and hyperparameters setting of **GraphSmote**, please refer to [GraphSmote](https://github.com/TianxiangZhao/GraphSmote).
 - For the implementation and hyperparameters setting of **Renode**, please refer to [Renode](https://github.com/victorchen96/ReNode).
@@ -33,7 +35,7 @@ pip install https://data.pyg.org/whl/torch-1.12.0%2Bcu113/torch_spline_conv-1.2.
 
 We strictly adhere to the hyperparameter settings as specified in these papers. For detailed information, please refer to the respective publications.
 
-## The hyperparameter settings for each experiment:
+## 4. The hyperparameter settings for each experiment:
 ###  CiteSeer_semi_GAT_10
 ```bash
 python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CiteSeer --de_1 0.45 --de_2 0.4 --decay 0.01 --df_1 0.5 --df_2 0.4 --dim 128 --epochs 2000 --imb_ratio 10.0 --lam 0.25 --lam2 3 --layers 2 --lr 0.001 --n_head 8 --net GAT --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.21 --thres 0.7
@@ -128,12 +130,12 @@ python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadi
 python main.py --balancedmask False --chebgcn_para 2 --classcenter True --datadir /tmp/data --dataset CS-random --de_1 0.7 --de_2 0.4 --decay 0.01 --df_1 0.45 --df_2 0.2 --dim 512 --epochs 2000 --imb_ratio 1.0 --lam 1.5 --lam2 0.5 --layers 4 --lr 0.001 --n_head 8 --net SAGE --patience 200 --project rvgnn --repetitions 5 --supervised True --tau 0.13 --thres 0.6
 ```
 
-## Configuration
+## 5. Configuration
 All the algorithms and models are implemented in Python and PyTorch Geometric. Experiments are
 conducted on a server with an NVIDIA 3090 GPU (24 GB memory) and an Intel(R) Xeon(R) Silver
 4210R CPU @ 2.40GHz.
 
-## Citation
+## 6. Citation
 ```
 @inproceedings{
 yan2023rethinking,
@@ -145,5 +147,5 @@ url={https://openreview.net/forum?id=0gvtoxhvMY}
 }
 ```
 
-## Acknowledgement
+## 7. Acknowledgement
 This work is supported by National Natural Science Foundation of China No.U2241212, No.62276066. We extend our gratitude to Jaeyun-Song for their meticulous organization of the baselines implementation within the [TAM framework](https://github.com/Jaeyun-Song/TAM).
